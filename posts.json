@@ -1,0 +1,114 @@
+[
+  {
+    "slug": "hlavni-plan",
+    "title": {
+      "cz": "Hlavní plán: Jak Frugální inženýr navrhl svůj 50měsíční sprint",
+      "en": "The Master Plan: Designing a 50-Month Sprint to Financial Independence"
+    },
+    "date": "2026-07-01",
+    "description": {
+      "cz": "Čtyřfázový optimalizační sprint k Coast FIRE. Detailní rozbor pák, alokace ETF portfolia a ošetření chybových stavů.",
+      "en": "A four-phase optimization sprint to Coast FIRE. Detailed breakdown of leverage, ETF portfolio allocation, and error handling."
+    },
+    "readingTime": {
+      "cz": "5 min",
+      "en": "5 min"
+    }
+  },
+  {
+    "slug": "vista-paradox",
+    "title": {
+      "cz": "Vista paradox: Proč Frugální inženýr s jměním v řádu desítek milionů šílí z drobné pojistky?",
+      "en": "The Vista Paradox: Why a Multi-Million Net Worth Makes the Frugal Engineer Panic Over a Small Premium"
+    },
+    "date": "2026-07-05",
+    "description": {
+      "cz": "Zpráva o chybě v systému. Proč Frugální inženýr na cestě k FIRE váhá s wellness víkendem, zatímco průměrný člověk tam jede bez mrknutí oka.",
+      "en": "A system bug report. Why the Frugal Engineer worries about spending on a weekend trip while the average family goes there without blinking."
+    },
+    "readingTime": {
+      "cz": "5 min",
+      "en": "5 min"
+    }
+  },
+  {
+    "slug": "krizovy-plan-smrti",
+    "title": {
+      "cz": "Krizový plán smrti: Jak zařídit, aby banky po vašem odchodu nezmrazily rodinný cash flow",
+      "en": "Death and Bank Freezes: How to Keep Family Cash Flow Alive"
+    },
+    "date": "2026-07-06",
+    "description": {
+      "cz": "Jak postavit systém odolný proti selhání při úmrtí. Právní a krizové záplaty: s.r.o. správa, joint accounts a notářský § 1556 OZ.",
+      "en": "How to build a fault-tolerant financial system for probate. Corporate routing, joint accounts, and estate administrator hacks."
+    },
+    "readingTime": {
+      "cz": "6 min",
+      "en": "6 min"
+    }
+  },
+  {
+    "slug": "suv-vs-porsche",
+    "title": {
+      "cz": "SUV vs. Porsche: Proč Frugální inženýr s jměním v řádu desítek milionů jezdí v běžném autě?",
+      "en": "SUV vs. Porsche: Why a Multi-Million Net Worth Frugal Engineer Drives a Boring SUV"
+    },
+    "date": "2026-07-07",
+    "description": {
+      "cz": "Analýza utility a složeného úročení u aut. Proč je leasing prémiových SUV pastí na svobodu a jak funguje Stealth Wealth.",
+      "en": "An analysis of utility and compound interest on cars. Why leasing premium SUVs is a trap, and how stealth wealth saves your sanity."
+    },
+    "readingTime": {
+      "cz": "5 min",
+      "en": "5 min"
+    }
+  },
+  {
+    "slug": "socialni-a-emocni-bugy",
+    "title": {
+      "cz": "Inženýrský mozek na cestě k FIRE má sociální a emoční bugy",
+      "en": "The Social and Emotional Bugs of an Engineering Brain on the Road to FIRE"
+    },
+    "date": "2026-07-08",
+    "description": {
+      "cz": "Reflexe lidského auditu. Proč má Stealth Wealth investor potřebu anonymně dokazovat svou pravdu a jak inženýrský mozek naráží na neoptimalizovatelný chaos vztahů.",
+      "en": "A reflection on a human audit. Why a Stealth Wealth investor needs anonymous validation and how the engineering mind crashes when facing the un-optimizable chaos of relationships."
+    },
+    "readingTime": {
+      "cz": "4 min",
+      "en": "4 min"
+    }
+  },
+  {
+    "slug": "proc-vydaje-nejsou-spotreba",
+    "title": {
+      "cz": "Měsíční refaktoring financí: Proč 47 tisíc výdajů není skutečná spotřeba",
+      "en": "Monthly Financial Refactoring: Why 47k CZK in Expenses is Not Actual Consumption"
+    },
+    "date": "2026-07-09",
+    "description": {
+      "cz": "Detailní rozbor rodinné spotřeby za červen 2026. Jak inženýrská analýza odděluje běžný OpEx od investic do CapEx a obhajuje Foodoru jako systémový buffer.",
+      "en": "Detailed analysis of family consumption in June 2026. How engineering analysis separates daily OpEx from CapEx and defends Foodora as a system buffer."
+    },
+    "readingTime": {
+      "cz": "5 min",
+      "en": "5 min"
+    }
+  },
+  {
+    "slug": "retro-h1-2026",
+    "title": {
+      "cz": "Retrospektiva H1 2026: Jak vypadá refaktoring rodinného portfolia za uplynulý půlrok",
+      "en": "H1 2026 Retrospective: Refactoring the Family Portfolio Over the Past Half-Year"
+    },
+    "date": "2026-07-14",
+    "description": {
+      "cz": "Audit a srovnání majetku Leden 2026 vs Červenec 2026. Konsolidace mikro-investic do ETF, stabilizace LTV na 49 % a růst investovatelného čistého jmění.",
+      "en": "Asset audit and comparison of January 2026 vs July 2026. Consolidating micro-investments into ETFs, stabilizing LTV at 49%, and investable net worth growth."
+    },
+    "readingTime": {
+      "cz": "6 min",
+      "en": "6 min"
+    }
+  }
+]

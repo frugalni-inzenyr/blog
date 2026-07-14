@@ -1,0 +1,1394 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Preload critical fonts for speed -->
+    <link rel="preload" href="fonts/inter-400.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/jetbrains-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+    
+    <!-- SEO: Primary Meta Tags -->
+    <title>README | Frugální inženýr</title>
+    <meta name="description" content="Tento projekt dokumentuje životní a finanční strategii technického profesionála směřujícího k FIRE.">
+    <meta name="author" content="Frugální Inženýr">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://frugalni-inzenyr.cz/about-cz.html">
+
+    <!-- SEO: Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://frugalni-inzenyr.cz/about-cz.html">
+    <meta property="og:title" content="README | Frugální inženýr">
+    <meta property="og:description" content="Tento projekt dokumentuje životní a finanční strategii technického profesionála směřujícího k FIRE.">
+    <meta property="og:image" content="https://frugalni-inzenyr.cz/logo.png">
+    <meta property="og:locale" content="cs_CZ">
+
+    <!-- SEO: Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="README | Frugální inženýr">
+    <meta name="twitter:description" content="Tento projekt dokumentuje životní a finanční strategii technického profesionála směřujícího k FIRE.">
+
+    <!-- GEO: Hreflang for bilingual content -->
+    <link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/about-cz.html">
+    <link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/about-en.html">
+    <link rel="alternate" hreflang="x-default" href="https://frugalni-inzenyr.cz/about-cz.html">
+
+    <!-- SEO: JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Blog",
+        "name": "Frugální Inženýr",
+        "alternateName": "Frugal Engineer",
+        "description": "Logy o optimalizaci osobních financí, ETF investování, FIRE a stealth wealth.",
+        "url": "https://frugalni-inzenyr.cz/",
+        "inLanguage": ["cs", "en"],
+        "about": [
+            {"@type": "Thing", "name": "FIRE (Financial Independence, Retire Early)"},
+            {"@type": "Thing", "name": "ETF Investing"},
+            {"@type": "Thing", "name": "Personal Finance"},
+            {"@type": "Thing", "name": "Stealth Wealth"}
+        ],
+        "author": {
+            "@type": "Person",
+            "name": "Frugální Inženýr",
+            "jobTitle": "Software Engineer"
+        }
+    }
+    </script>
+
+    
+    <!-- CSS -->
+    <style>/* ==========================================================================
+   Frugální inženýr - CSS Design System & Premium Stylesheet
+   ========================================================================== */
+
+/* Custom Local Fonts */
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/inter-400.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('fonts/inter-700.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'JetBrains Mono';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('fonts/jetbrains-mono-400.woff2') format('woff2');
+}
+
+/* Variables & Theme Tokens */
+:root {
+    --bg-primary: #080c14;
+    --bg-secondary: #0f1626;
+    --bg-surface: #17223b;
+    --border-color: #263554;
+    
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+    
+    --accent-emerald: #00ff66;
+    --accent-cyan: #00f0ff;
+    --accent-gradient: linear-gradient(135deg, #00ff66, #00f0ff);
+    
+    --error: #f43f5e;
+    --success: #00ff66;
+    
+    --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
+    
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.4);
+    --shadow-md: 0 10px 35px rgba(0, 0, 0, 0.6);
+    --transition: all 0.2s ease-out;
+}
+
+/* Global Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Links Styling & Visited State Unification */
+a {
+    color: var(--accent-cyan);
+    text-decoration: underline;
+    transition: var(--transition);
+}
+
+a:visited {
+    color: var(--accent-cyan);
+}
+
+a:hover, a:focus {
+    color: var(--accent-emerald);
+    text-decoration: none;
+}
+
+.logo:visited {
+    color: var(--text-primary);
+}
+
+.nav-link:visited {
+    color: var(--text-secondary);
+}
+
+.post-card:visited {
+    color: var(--text-primary);
+}
+
+.post-card:hover .post-card-title {
+    color: var(--accent-cyan);
+}
+
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: var(--font-sans);
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Ambient Glow Background */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -1;
+    filter: blur(130px);
+    opacity: 0.035;
+    transition: opacity 0.5s ease;
+}
+body::before {
+    top: -100px;
+    left: -100px;
+    background: var(--accent-cyan);
+}
+body::after {
+    bottom: -100px;
+    right: -100px;
+    background: var(--accent-emerald);
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: var(--radius-sm);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
+}
+
+/* Container */
+.header-container, .app-content, .footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* 1. Header Styling */
+.main-header {
+    background-color: rgba(8, 12, 20, 0.75);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(38, 53, 84, 0.5);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    transition: var(--transition);
+}
+
+.logo:hover {
+    opacity: 0.95;
+    transform: translateY(-1px);
+}
+
+.logo .highlight {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.75rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: var(--transition);
+    cursor: pointer;
+    position: relative;
+    padding: 0.25rem 0;
+}
+
+.nav-link:hover {
+    color: var(--text-primary);
+}
+
+.nav-link.active {
+    color: var(--text-primary);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+.btn-editor {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(16, 185, 129, 0.1);
+    color: var(--accent-emerald) !important;
+    padding: 0.5rem 1rem !important;
+    border-radius: var(--radius-sm);
+    border: 1px dashed rgba(16, 185, 129, 0.3);
+}
+
+.btn-editor:hover {
+    background: rgba(16, 185, 129, 0.2);
+    border-color: rgba(16, 185, 129, 0.5);
+    transform: translateY(-1px);
+}
+
+.btn-editor i {
+    width: 14px;
+    height: 14px;
+}
+
+/* 2. Main Content Layout */
+.app-content {
+    padding-top: 3.5rem;
+    padding-bottom: 5rem;
+    min-height: calc(100vh - 144px);
+}
+
+.view-section {
+    animation: fadeIn 0.35s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 3. Hero Section (Home View) */
+.hero {
+    margin-bottom: 4rem;
+}
+
+.hero-tag {
+    display: inline-block;
+    background-color: var(--bg-surface);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding: 0.25rem 0.75rem;
+    border-radius: 50px;
+    border: 1px solid var(--border-color);
+    margin-bottom: 1.25rem;
+}
+
+.hero-title {
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin-bottom: 1.25rem;
+}
+
+.gradient-text {
+    background: var(--accent-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-lead {
+    color: var(--text-secondary);
+    font-size: 1.15rem;
+    max-width: 720px;
+    line-height: 1.5;
+}
+
+/* Section Title */
+.section-title {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.section-title h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.section-title .line {
+    width: 40px;
+    height: 3px;
+    background: var(--accent-gradient);
+    border-radius: 2px;
+}
+
+/* 4. Posts Grid & Cards */
+.posts-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.post-card {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.75rem;
+    text-decoration: none;
+    color: var(--text-primary);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    cursor: pointer;
+    display: block;
+}
+
+.post-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 240, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 240, 255, 0.05), var(--shadow-sm);
+}
+
+.post-card-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+}
+
+.post-card-title {
+    font-size: 1.35rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+    transition: var(--transition);
+}
+
+.post-card:hover .post-card-title {
+    color: var(--accent-cyan);
+}
+
+.post-card-desc {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Pinned post styling */
+.pinned-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35rem;
+    color: var(--accent-cyan);
+    font-weight: 700;
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.05em;
+}
+
+.pinned-badge svg {
+    width: 12px;
+    height: 12px;
+    transform: rotate(45deg);
+}
+
+.pinned-card {
+    border-left: 3px solid var(--accent-cyan) !important;
+    position: relative;
+}
+
+.pinned-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(0, 240, 255, 0.02) 0%, transparent 100%);
+    pointer-events: none;
+}
+
+.loader {
+    text-align: center;
+    color: var(--text-muted);
+    font-family: var(--font-mono);
+    padding: 3rem 0;
+}
+
+/* 5. Article Reader View */
+.post-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    color: var(--accent-cyan);
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 400;
+    transition: var(--transition);
+}
+
+.back-link:hover {
+    color: var(--text-primary);
+    transform: translateX(-2px);
+}
+
+.back-link svg {
+    width: 16px;
+    height: 16px;
+}
+
+.post-meta-top {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* Markdown Rendering Engine Styling */
+.markdown-body {
+    color: var(--text-secondary);
+    font-size: 1.08rem;
+    line-height: 1.75;
+    letter-spacing: -0.011em;
+}
+
+.markdown-body h1, .markdown-body h2, .markdown-body h3 {
+    font-family: var(--font-mono);
+    color: var(--text-primary);
+    margin-top: 2.25rem;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.02em;
+}
+
+.markdown-body h1 { font-size: 2.1rem; }
+.markdown-body h2 { font-size: 1.55rem; border-bottom: 1px solid var(--border-color); padding-bottom: 0.4rem; }
+.markdown-body h3 { font-size: 1.22rem; }
+
+.markdown-body p {
+    margin-bottom: 1.35rem;
+}
+
+.markdown-body ul, .markdown-body ol {
+    margin-bottom: 1.25rem;
+    padding-left: 1.5rem;
+}
+
+.markdown-body li {
+    margin-bottom: 0.4rem;
+}
+
+.markdown-body strong {
+    color: var(--text-primary);
+    font-weight: 700;
+}
+
+.markdown-body blockquote {
+    padding: 0 1rem;
+    color: var(--text-secondary);
+    border-left: 4px solid var(--accent-emerald);
+    background-color: var(--bg-secondary);
+    padding: 0.75rem 1.25rem;
+    border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+    margin: 1.5rem 0;
+    font-style: italic;
+}
+
+.markdown-body hr {
+    height: 1px;
+    background-color: var(--border-color);
+    border: none;
+    margin: 2.5rem 0;
+}
+
+.markdown-body pre {
+    background-color: var(--bg-secondary);
+    padding: 1rem;
+    border-radius: var(--radius-sm);
+    overflow-x: auto;
+    border: 1px solid var(--border-color);
+    margin: 1.5rem 0;
+}
+
+.markdown-body code {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    background-color: var(--bg-secondary);
+    padding: 0.15rem 0.35rem;
+    border-radius: 3px;
+    border: 1px solid var(--border-color);
+    color: var(--accent-cyan);
+}
+
+.markdown-body pre code {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    color: var(--text-primary);
+}
+
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: var(--radius-sm);
+    padding: 0.75rem 1.5rem;
+    font-size: 0.95rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: var(--transition);
+    border: none;
+}
+
+.btn svg {
+    width: 16px;
+    height: 16px;
+}
+
+.btn-primary {
+    background: var(--accent-gradient);
+    color: var(--bg-primary);
+    font-weight: 700;
+}
+
+.btn-primary:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+}
+
+.btn-secondary {
+    background-color: var(--bg-surface);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--border-color);
+    transform: translateY(-1px);
+}
+
+
+
+/* 7. About View */
+.about-container {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.about-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.about-content h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: var(--text-primary);
+}
+
+.about-content ul {
+    list-style-type: none;
+    margin-bottom: 2rem;
+}
+
+.about-content li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+}
+
+.about-content li strong {
+    color: var(--text-primary);
+}
+
+/* Globální styl pro tabulky v článcích a Frugální setup */
+.setup-table,
+.article-body table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin: 2rem 0;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    background-color: var(--bg-secondary);
+    overflow: hidden;
+    font-size: 0.95rem;
+}
+
+.setup-table tr,
+.article-body table tr {
+    transition: background-color 0.2s ease;
+}
+
+.setup-table tr:hover,
+.article-body table tbody tr:hover {
+    background-color: rgba(0, 240, 255, 0.02);
+}
+
+.setup-table td,
+.article-body table td,
+.article-body table th {
+    padding: 1.25rem 1.5rem;
+    vertical-align: top;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.setup-table tr:last-child td,
+.article-body table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Specifické stylizace pro záhlaví markdown tabulek */
+.article-body table th {
+    background-color: rgba(38, 53, 84, 0.3);
+    color: var(--accent-cyan);
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* První sloupec v těle tabulek článků se chová jako klíč */
+.article-body table tbody td:first-child,
+.article-body table tbody td:first-child strong {
+    font-family: var(--font-mono) !important;
+    color: var(--accent-cyan) !important;
+    font-weight: 400 !important;
+    font-size: 0.9rem !important;
+}
+
+.setup-key {
+    width: 200px;
+    vertical-align: top;
+}
+
+.setup-key-inner {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: var(--font-mono);
+    color: var(--accent-cyan);
+    font-weight: 400;
+    font-size: 0.9rem;
+    user-select: none;
+}
+
+.setup-key-inner svg {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    stroke-width: 2px;
+}
+
+.setup-value {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+    .setup-table td,
+    .article-body table td,
+    .article-body table th {
+        display: block;
+        width: 100%;
+    }
+    .setup-table tr td:first-child {
+        padding-bottom: 0.5rem;
+        border-bottom: none;
+    }
+    .setup-table tr td:last-child {
+        padding-top: 0.5rem;
+    }
+    .setup-key {
+        width: 100%;
+    }
+}
+
+/* 8. Footer */
+.main-footer {
+    border-top: 1px solid var(--border-color);
+    padding: 2.5rem 0;
+    text-align: center;
+    background-color: var(--bg-primary);
+}
+
+.main-footer p {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+}
+
+/* Responsive Scaling */
+@media (max-width: 768px) {
+    .header-container, .app-content, .footer-container {
+        padding: 0 1rem;
+    }
+    
+    .terminal-body {
+        padding: 1.25rem 1rem;
+    }
+    
+    .post-card {
+        padding: 1.25rem;
+    }
+    
+    .markdown-body blockquote {
+        padding: 1rem 1.25rem;
+        margin: 1.5rem 0;
+    }
+
+    .logo-text {
+        font-size: 1.1rem;
+    }
+    
+    .main-nav {
+        gap: 1rem;
+    }
+    
+    .btn-editor {
+        padding: 0.4rem 0.75rem !important;
+        font-size: 0.85rem;
+    }
+    
+    .hero-title {
+        font-size: 2rem;
+    }
+}
+
+/* ==========================================================================
+   Terminal Elements & IT Styling
+   ========================================================================== */
+.terminal-window {
+    background-color: var(--bg-secondary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    overflow: hidden;
+    margin-bottom: 2.5rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.terminal-window:hover {
+    border-color: rgba(0, 255, 102, 0.25);
+    box-shadow: 0 12px 40px rgba(0, 255, 102, 0.02), var(--shadow-md);
+}
+
+.terminal-bar {
+    background-color: var(--bg-surface);
+    border-bottom: 1px solid var(--border-color);
+    padding: 0.65rem 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.dot-red { background-color: #ff5f56; }
+.dot-yellow { background-color: #ffbd2e; }
+.dot-green { background-color: #27c93f; }
+
+.terminal-title {
+    margin-left: 0.75rem;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.terminal-body {
+    padding: 1.75rem 2rem;
+    background-color: var(--bg-primary);
+}
+
+.command-line {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.prompt {
+    color: var(--accent-emerald);
+    font-weight: 700;
+}
+
+/* Custom TL;DR Alert / Box inside markdown body */
+.markdown-body blockquote {
+    border-left: 4px solid var(--accent-cyan);
+    background-color: rgba(6, 182, 212, 0.05);
+    border: 1px dashed var(--border-color);
+    border-left: 4px solid var(--accent-cyan);
+    padding: 1.25rem 1.5rem;
+    border-radius: var(--radius-sm);
+    margin: 2rem 0;
+    font-style: normal;
+}
+
+.markdown-body blockquote strong {
+    color: var(--accent-cyan);
+}
+
+.markdown-body blockquote ul {
+    margin-top: 0.75rem;
+    margin-bottom: 0;
+    padding-left: 1.25rem;
+}
+
+.markdown-body blockquote li {
+    font-size: 0.95rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.5rem;
+}
+
+.markdown-body blockquote li strong {
+    color: var(--text-primary);
+}
+
+/* Language Switcher Display Rules */
+body.lang-cz .lang-en { display: none !important; }
+body.lang-en .lang-cz { display: none !important; }
+
+/* Language Switcher Button Styling */
+.btn-lang {
+    background-color: var(--bg-surface);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-sm);
+    padding: 0.35rem 0.65rem !important;
+    font-size: 0.8rem;
+    font-weight: 700;
+    font-family: var(--font-mono);
+    color: var(--accent-cyan) !important;
+    transition: var(--transition);
+}
+
+.btn-lang:hover {
+    background-color: var(--border-color);
+    color: var(--text-primary) !important;
+}
+
+/* ==========================================================================
+   New Dynamic UX Components (Reading Progress & Scroll Top & Blink Cursor)
+   ========================================================================== */
+
+/* Reading Progress Bar */
+.reading-progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: var(--accent-gradient);
+    transition: width 0.1s ease-out;
+    z-index: 101;
+}
+
+/* Scroll to Top Button */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2.5rem;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(15, 22, 38, 0.8);
+    border: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 90;
+    backdrop-filter: blur(8px);
+    box-shadow: var(--shadow-sm);
+}
+
+.scroll-top-btn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.scroll-top-btn:hover {
+    background-color: var(--bg-surface);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    box-shadow: 0 0 15px rgba(0, 240, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.scroll-top-btn svg {
+    width: 18px;
+    height: 18px;
+}
+
+/* Blinking terminal cursor */
+.command-line::after {
+    content: "▊";
+    color: var(--accent-emerald);
+    animation: blinkCursor 1s infinite alternate;
+    margin-left: 2px;
+}
+
+@keyframes blinkCursor {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* BMC Button inside articles */
+.bmc-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(0, 240, 255, 0.1);
+    border: 1px solid rgba(0, 240, 255, 0.35);
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-sm);
+    color: var(--accent-cyan) !important;
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    transition: var(--transition);
+    margin-top: 0.75rem;
+    box-shadow: 0 0 10px rgba(0, 240, 255, 0.15);
+}
+
+.bmc-button:hover {
+    background: rgba(0, 240, 255, 0.2);
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan) !important;
+    text-decoration: none;
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.35);
+    transform: translateY(-1px);
+}
+</style>
+
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+</head>
+<body class="lang-cz">
+
+    <!-- Premium Header -->
+    <header class="main-header">
+        <div class="header-container">
+            <a href="index.html" class="logo" id="logo-btn">
+                <img src="logo.png" alt="Frugální Inženýr Logo" class="logo-icon" width="28" height="28" style="border-radius: 4px; border: 1px solid var(--border-color);">
+                <span class="logo-text">Frugální<span class="highlight">Inženýr</span></span>
+            </a>
+            <nav class="main-nav">
+                <a href="index.html" class="nav-link " id="nav-blog">
+                    <span class="lang-cz">Logy</span><span class="lang-en">Logs</span>
+                </a>
+                <a href="about-cz.html" class="nav-link active" id="nav-about">
+                    <span>README</span>
+                </a>
+                <a href="api-cz.html" class="nav-link " id="nav-api">
+                    <span>API</span>
+                </a>
+
+                <a href="about-en.html" class="nav-link btn-lang" id="lang-btn">EN</a>
+            </nav>
+        </div>
+        <!-- Reading Progress Bar -->
+        <div id="reading-progress" class="reading-progress-bar"></div>
+    </header>
+
+    <!-- App Container -->
+    <main class="app-content">
+        <!-- 1. HOME VIEW (Post List) -->
+        <section id="home-view" class="view-section" style="display: none;">
+            <div class="terminal-window hero-terminal">
+                <div class="terminal-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title">frugal-engineer@optionality-os:~$ run fire-plan</span>
+                </div>
+                <!-- CZ Welcome -->
+                <div class="terminal-body lang-cz">
+                    <div class="command-line"><span class="prompt">guest@fire-os:~$</span> cat welcome.md</div>
+                    <h1 class="hero-title">Zápisky o optimalizaci života, financí a cesty k <span class="gradient-text">FIRE</span>.</h1>
+                    <p class="hero-lead" style="margin-bottom: 1.5rem;">Hledání rovnováhy mezi hromaděním majetku, inženýrským pohledem na svět a prostým užíváním života bez zbytečných statusových her.</p>
+                    
+                    <div style="border-top: 1px dashed var(--border-color); padding-top: 1.25rem; margin-top: 1.25rem;">
+                        <h3 style="color: var(--accent-cyan); font-size: 1.05rem; margin-bottom: 0.75rem; font-weight: 600;">System Definition: Kdo je Frugální Inženýr?</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.5rem; line-height: 1.5;">
+                            Člověk, který nahlíží na čas, peníze a životní rozhodnutí jako na systémy k optimalizaci:
+                        </p>
+                        <ul style="list-style-type: none; font-size: 0.9rem; color: var(--text-muted); padding-left: 0; line-height: 1.6;">
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">Frugalita:</strong> Odmítnutí statusového balastu, leasingového marketingu a předražených náplastí na zbytečnou práci. Maximalizace užitné hodnoty (Value for Money).
+                            </li>
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">Inženýrství:</strong> Stavění systémů odolných proti selhání (fault-tolerant), spoléhání se na tvrdá data, složené úročení a Monte Carlo simulace, nikoliv na pocity a náhodu.
+                            </li>
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">FIRE (Financial Independence, Retire Early):</strong> Finanční nezávislost a předčasný důchod. Stav, kdy pasivní příjmy z investovaného majetku spolehlivě pokryjí životní náklady a práce se stává čistě dobrovolnou volbou, nikoliv nutností k přežití.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- EN Welcome -->
+                <div class="terminal-body lang-en">
+                    <div class="command-line"><span class="prompt">guest@fire-os:~$</span> cat welcome_en.md</div>
+                    <h1 class="hero-title">Notes on optimizing life, personal finance, and <span class="gradient-text">FIRE</span>.</h1>
+                    <p class="hero-lead" style="margin-bottom: 1.5rem;">Finding equilibrium between wealth accumulation, an engineering outlook on life, and experiencing the present without status games.</p>
+                    
+                    <div style="border-top: 1px dashed var(--border-color); padding-top: 1.25rem; margin-top: 1.25rem;">
+                        <h3 style="color: var(--accent-cyan); font-size: 1.05rem; margin-bottom: 0.75rem; font-weight: 600;">System Definition: Who is the Frugal Engineer?</h3>
+                        <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 0.5rem; line-height: 1.5;">
+                            A systematic thinker who views time, money, and life decisions as code blocks to be refactored:
+                        </p>
+                        <ul style="list-style-type: none; font-size: 0.9rem; color: var(--text-muted); padding-left: 0; line-height: 1.6;">
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">Frugality:</strong> Rejecting status symbols, emotional spending, and leases. Maximizing utility and value for money while ignoring external vanity expectations.
+                            </li>
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">Engineering:</strong> Designing fault-tolerant structures, using data-driven pipelines, compound interest calculations, and Monte Carlo models rather than luck.
+                            </li>
+                            <li style="margin-bottom: 0.4rem; padding-left: 1.2rem; position: relative;">
+                                <span style="position: absolute; left: 0; color: var(--accent-emerald);">&gt;</span>
+                                <strong style="color: var(--text-primary);">FIRE (Financial Independence, Retire Early):</strong> A state where passive income generated by accumulated assets reliably covers all household expenses, turning employment from a survival necessity into a voluntary choice.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="section-title">
+                <h2 class="lang-cz">Nejnovější logy</h2>
+                <h2 class="lang-en">Latest Logs</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="posts-grid" id="posts-container">
+                
+            </div>
+        </section>
+
+        <!-- 2. POST VIEW (Single Article Reader) -->
+        <section id="post-view" class="view-section" style="display: none;">
+            <div class="post-header-container">
+                <a href="index.html" class="back-link" id="back-to-blog">
+                    <svg class="feather feather-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg> <span class="lang-cz">Zpět na logy</span><span class="lang-en">Back to logs</span>
+                </a>
+                <div class="post-meta-top">
+                    <span id="post-date"></span> • <span id="post-read-time"></span>
+                </div>
+            </div>
+            <div class="terminal-window">
+                <div class="terminal-bar">
+                    <span class="dot dot-red"></span>
+                    <span class="dot dot-yellow"></span>
+                    <span class="dot dot-green"></span>
+                    <span class="terminal-title" id="terminal-post-title"></span>
+                </div>
+                <div class="terminal-body">
+                    <article class="article-body markdown-body" id="post-content">
+                        
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- 4. ABOUT VIEW -->
+        <section id="about-view" class="view-section" style="display: block;">
+            <!-- CZ VERSION -->
+            <div class="about-container lang-cz">
+                <h1 class="about-title"><span class="highlight">README.md</span></h1>
+                <div class="about-content">
+                    <p>Tento projekt (Frugální Inženýr) dokumentuje životní a finanční strategii technického profesionála (30+ let, žijícího v České republice), který se na svůj profesní, finanční i osobní život dívá jako na systém, který lze analyzovat, modelovat a optimalizovat.</p>
+                    <p>Za posledních 10 let vybudoval kombinací vysoké míry úspor, investování do širokých globálních ETF a správy nemovitostí solidní finanční základ v řádu desítek milionů Kč. Byla to fáze hrubé, přímočaré akumulace a budování redundance.</p>
+                    <p>Tyto logy nejsou návodem na rychlé zbohatnutí. Je to inženýrský zápisník a systémový rozbor o tom, jak se chová hlava vycvičená na extrémní optimalizaci nákladů v momentě, kdy už šetřit nemusí. Je to hledání optimálního bodu mezi finanční svobodou a prožíváním přítomnosti bez zbytečných Opportunity Cost analýz.</p>
+                    
+                    <h3>Systémová data (Frugální Setup):</h3>
+                    <table class="setup-table">
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-pie-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg> Portfolio</div></td>
+                            <td class="setup-value">Globální ETF portfolio (s faktorovou složkou) a nájemní nemovitosti (s LTV kolem 50 %).</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg> Vozový park</div></td>
+                            <td class="setup-value">Korejské rodinné SUV (v osobním vlastnictví, bez leasingu či dluhu).</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg> Filosofie</div></td>
+                            <td class="setup-value">Čas a absolutní kontrola nad ním mají nekonečně vyšší užitek (utility) než statusové symboly a předražený luxus.</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg> Kompilátor</div></td>
+                            <td class="setup-value">Myšlenkové koncepty, data a výpočty pocházejí od Frugálního Inženýra (člověk), finální stylizace a generování textů probíhá za pomoci AI (LLM).</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- EN VERSION -->
+            <div class="about-container lang-en">
+                <h1 class="about-title"><span class="highlight">README.md</span></h1>
+                <div class="about-content">
+                    <p>This project (the Frugal Engineer) documents the life and financial strategy of a technical professional (30+ years old, living in the Czech Republic) who views his professional, financial, and personal life as a system that can be analyzed, modeled, and optimized.</p>
+                    <p>Over the last 10 years, through a combination of a high savings rate, investing in broad global ETFs, and managing real estate assets, he has built a solid financial foundation in the lower tens of millions of CZK. This was the phase of raw, straightforward accumulation and building system redundancy.</p>
+                    <p>These logs are not a guide on how to get rich in a week. It is an engineering log and a system analysis of how a mind trained for extreme cost optimization behaves when it no longer needs to save. It is a search for the optimal operating point between financial independence and experiencing the present without constant Opportunity Cost calculations.</p>
+                    
+                    <h3>System Data (Frugal Setup):</h3>
+                    <table class="setup-table">
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-pie-chart" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg> Portfolio</div></td>
+                            <td class="setup-value">Globally diversified ETF portfolio (with a factor tilt) and rental properties (with an LTV of around 50%).</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"></rect><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"></polygon><circle cx="5.5" cy="18.5" r="2.5"></circle><circle cx="18.5" cy="18.5" r="2.5"></circle></svg> Fleet</div></td>
+                            <td class="setup-value">Korean family SUV (owned outright, free of leasing or debt).</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-compass" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon></svg> Philosophy</div></td>
+                            <td class="setup-value">Time and absolute control over it have infinitely higher utility than status symbols and overpriced luxury.</td>
+                        </tr>
+                        <tr>
+                            <td class="setup-key"><div class="setup-key-inner"><svg class="feather feather-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2" ry="2"></rect><rect x="9" y="9" width="6" height="6"></rect><line x1="9" y1="1" x2="9" y2="4"></line><line x1="15" y1="1" x2="15" y2="4"></line><line x1="9" y1="20" x2="9" y2="23"></line><line x1="15" y1="20" x2="15" y2="23"></line><line x1="20" y1="9" x2="23" y2="9"></line><line x1="20" y1="15" x2="23" y2="15"></line><line x1="1" y1="9" x2="4" y2="9"></line><line x1="1" y1="15" x2="4" y2="15"></line></svg> Compiler</div></td>
+                            <td class="setup-value">Analytical concepts, data, and calculations are provided by the Frugal Engineer (human), while final text styling and generation are done with the help of AI (LLM).</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. API VIEW (Pricing / Rules of the game) -->
+        <section id="api-view" class="view-section" style="display: none;">
+            <!-- CZ VERSION -->
+            <div class="about-container lang-cz">
+                <h1 class="about-title"><span class="highlight">API_Specification.md</span></h1>
+                <div class="about-content">
+                    <p>Projekt Frugální Inženýr hraje od začátku s otevřenými kartami. Nechceme vám po čase zamykat texty za paywall ani nutit předplatné za čtení. Všechny myšlenky jsou a zůstanou zdarma ve Free Tier. Pokud však chcete využívat surová produkční data a ušetřit si tak hodiny práce s vlastním vývojem, je zde pro vás připraven Production Tier.</p>
+                    
+                    <h3>Definované Endpointy a Tarify:</h3>
+                    <table class="setup-table" style="margin-top: 1.5rem;">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Endpoint / Metoda</th>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Popis / Vrácená data</th>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Pricing / Autentizace</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">GET /logs</span></div></td>
+                                <td class="setup-value">Čtení všech architektonických logů, úvah o optimalizaci a krizových plánů.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">0 CZK</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Rate limit: Neomezený</span></td>
+                            </tr>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">POST /newsletter</span></div></td>
+                                <td class="setup-value">Doručování nových logů a exkluzivních rozborů přímo do vaší e-mailové schránky.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">Placené předplatné</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Auth: <a href="https://frugalniinzenyr.substack.com" target="_blank" style="color: var(--accent-cyan);">Substack</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">GET /production-data</span></div></td>
+                                <td class="setup-value">Surová produkční data k jednotlivým logům.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">Dobrovolná podpora</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Auth: <a href="https://www.buymeacoffee.com/frugalni.inzenyr" target="_blank" style="color: var(--accent-cyan);">Buy Me a Coffee</a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+            <!-- EN VERSION -->
+            <div class="about-container lang-en">
+                <h1 class="about-title"><span class="highlight">API_Specification.md</span></h1>
+                <div class="about-content">
+                    <p>The Frugal Engineer plays with open cards from day one. We will never lock articles behind a paywall or force subscriptions just to read. All ideas and logs are and will remain free in the Free Tier. However, if you want to use the raw production datasets to save hours of manual setup, you can access the Production Tier.</p>
+                    
+                    <h3>Defined Endpoints and Rates:</h3>
+                    <table class="setup-table" style="margin-top: 1.5rem;">
+                        <thead>
+                            <tr>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Endpoint / Method</th>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Description / Payload</th>
+                                <th style="text-align: left; padding: 0.75rem; border-bottom: 2px solid var(--border-color); color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace; font-size: 0.85rem;">Pricing / Auth</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">GET /logs</span></div></td>
+                                <td class="setup-value">Access to all architectural logs, system analysis, and disaster recovery plans.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">0 CZK</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Rate limit: Unlimited</span></td>
+                            </tr>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">POST /newsletter</span></div></td>
+                                <td class="setup-value">Delivery of new logs and exclusive breakdowns directly to your inbox.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">Paid Subscription</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Auth: <a href="https://frugalniinzenyr.substack.com" target="_blank" style="color: var(--accent-cyan);">Substack</a></span></td>
+                            </tr>
+                            <tr>
+                                <td class="setup-key"><div class="setup-key-inner"><span style="color: var(--accent-cyan); font-family: 'JetBrains Mono', monospace;">GET /production-data</span></div></td>
+                                <td class="setup-value">Raw production data for individual logs.</td>
+                                <td class="setup-value"><strong style="color: var(--accent-cyan);">Voluntary support</strong><br><span style="color: var(--text-muted); font-size: 0.8rem;">Auth: <a href="https://www.buymeacoffee.com/frugalni.inzenyr" target="_blank" style="color: var(--accent-cyan);">Buy Me a Coffee</a></span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container" style="display: flex; flex-direction: column; gap: 0.75rem; text-align: center;">
+            <div>
+                <p class="lang-cz">© 2026 Frugální Inženýr. Běží na čistém, statickém HTML/JS kódu. <span style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-top: 0.25rem;">[ Myšlenky, data a výpočty: Člověk | Texty: AI ]</span></p>
+                <p class="lang-en">© 2026 Frugal Engineer. Powered by clean, static HTML/JS code. <span style="color: var(--text-muted); font-size: 0.85rem; display: block; margin-top: 0.25rem;">[ Inputs, data, and math: Human | Texts: AI ]</span></p>
+            </div>
+            <div style="margin: 0.5rem 0;">
+                <a href="https://www.buymeacoffee.com/frugalni.inzenyr" target="_blank" rel="noopener noreferrer" style="
+                    display: inline-flex;
+                    align-items: center;
+                    gap: 0.5rem;
+                    background: rgba(0, 240, 255, 0.05);
+                    border: 1px solid var(--border-color);
+                    padding: 0.5rem 1rem;
+                    border-radius: var(--radius-sm);
+                    color: var(--accent-cyan);
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    font-weight: 500;
+                    transition: var(--transition);
+                "
+                onmouseover="this.style.background='rgba(0, 240, 255, 0.12)'; this.style.borderColor='var(--accent-cyan)'"
+                onmouseout="this.style.background='rgba(0, 240, 255, 0.05)'; this.style.borderColor='var(--border-color)'">
+                    <span>🍺</span>
+                    <span class="lang-cz">Pozvat inženýra na pivo</span>
+                    <span class="lang-en">Buy the engineer a beer</span>
+                </a>
+            </div>
+            <div style="font-size: 0.75rem; color: var(--text-muted); max-width: 800px; margin: 0 auto; line-height: 1.4;">
+                <p class="lang-cz"><em><strong>Upozornění:</strong> Informace na tomto webu vyjadřují výhradně osobní názory autora a slouží pouze ke studijním a zábavním účelům. Žádný z textů není investičním doporučením, finančním poradenstvím ani analýzou investičních příležitostí podle zákona č. 256/2004 Sb. Investování na finančních trzích nese riziko ztráty kapitálu.</em></p>
+                <p class="lang-en"><em><strong>Disclaimer:</strong> The content on this website represents the author's personal opinions only and is provided solely for educational and informational purposes. None of the texts constitute investment advice, financial planning, or investment analysis. Investing in financial markets involves the risk of loss.</em></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top-btn" class="scroll-top-btn" aria-label="Zpět nahoru" title="Zpět nahoru">
+        <svg class="feather feather-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"></line><polyline points="5 12 12 5 19 12"></polyline></svg>
+    </button>
+
+    <!-- App Logic -->
+    <script src="app.js" defer></script>
+</body>
+</html>

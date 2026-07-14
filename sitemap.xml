@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- Homepage CZ -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/index-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Homepage EN -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/index-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/index-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- About CZ -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/about-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/about-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/about-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- About EN -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/about-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/about-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/about-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- API CZ -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/api-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/api-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/api-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- API EN -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/api-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/api-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/api-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- Post: Hlavní plán: Jak Frugální inženýr navrhl svůj 50měsíční sprint -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/hlavni-plan-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/hlavni-plan-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/hlavni-plan-en.html"/>
+        <lastmod>2026-07-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): The Master Plan: Designing a 50-Month Sprint to Financial Independence -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/hlavni-plan-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/hlavni-plan-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/hlavni-plan-en.html"/>
+        <lastmod>2026-07-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: Vista paradox: Proč Frugální inženýr s jměním v řádu desítek milionů šílí z drobné pojistky? -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/vista-paradox-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/vista-paradox-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/vista-paradox-en.html"/>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): The Vista Paradox: Why a Multi-Million Net Worth Makes the Frugal Engineer Panic Over a Small Premium -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/vista-paradox-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/vista-paradox-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/vista-paradox-en.html"/>
+        <lastmod>2026-07-05</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: Krizový plán smrti: Jak zařídit, aby banky po vašem odchodu nezmrazily rodinný cash flow -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-en.html"/>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): Death and Bank Freezes: How to Keep Family Cash Flow Alive -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/krizovy-plan-smrti-en.html"/>
+        <lastmod>2026-07-06</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: SUV vs. Porsche: Proč Frugální inženýr s jměním v řádu desítek milionů jezdí v běžném autě? -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/suv-vs-porsche-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/suv-vs-porsche-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/suv-vs-porsche-en.html"/>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): SUV vs. Porsche: Why a Multi-Million Net Worth Frugal Engineer Drives a Boring SUV -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/suv-vs-porsche-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/suv-vs-porsche-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/suv-vs-porsche-en.html"/>
+        <lastmod>2026-07-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: Inženýrský mozek na cestě k FIRE má sociální a emoční bugy -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): The Social and Emotional Bugs of an Engineering Brain on the Road to FIRE -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/socialni-a-emocni-bugy-en.html"/>
+        <lastmod>2026-07-08</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: Měsíční refaktoring financí: Proč 47 tisíc výdajů není skutečná spotřeba -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-en.html"/>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): Monthly Financial Refactoring: Why 47k CZK in Expenses is Not Actual Consumption -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/proc-vydaje-nejsou-spotreba-en.html"/>
+        <lastmod>2026-07-09</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post: Retrospektiva H1 2026: Jak vypadá refaktoring rodinného portfolia za uplynulý půlrok -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/retro-h1-2026-cz.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/retro-h1-2026-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/retro-h1-2026-en.html"/>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- Post (EN): H1 2026 Retrospective: Refactoring the Family Portfolio Over the Past Half-Year -->
+    <url>
+        <loc>https://frugalni-inzenyr.cz/logs/retro-h1-2026-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="cs" href="https://frugalni-inzenyr.cz/logs/retro-h1-2026-cz.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://frugalni-inzenyr.cz/logs/retro-h1-2026-en.html"/>
+        <lastmod>2026-07-14</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+</urlset>

@@ -1,0 +1,5 @@
+# Frugální inženýr - Public .gitignore
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

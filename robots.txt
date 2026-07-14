@@ -1,0 +1,17 @@
+# Frugální inženýr - robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://frugalni-inzenyr.cz/sitemap.xml
+
+# Block aggressive non-traffic generating crawlers
+User-agent: CCBot
+Disallow: /
+
+# Block access to internal files
+Disallow: /posts.json
+Disallow: /.agents/
+Disallow: /*.numbers$
+
